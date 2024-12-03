@@ -3,21 +3,20 @@
 	<channel>
 		<title>ROMAN THE FREE MAN</title>
 		<description>It&apos;s all about freedom</description>
-		<link>http://localhost:4000</link>
-		<atom:link href="http://localhost:4000/rss-feed.xml" rel="self" type="application/rss+xml" />
+		<link>https://romanthefreeman.com</link>
+		<atom:link href="https://romanthefreeman.com/rss-feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>How to Extend Visa Free Stay in Japan to 6 Months</title>
+				<title>Extend Your Visa-Free Stay in Japan to 6 Months: a Step-by-Step Guide</title>
 				
 					<dc:creator>Roman Freeman</dc:creator>
 				
 				
-					<description>&lt;p&gt;So I went to &lt;a href=&quot;https://www.momat.go.jp/en/collection/o00937&quot;&gt;The National Museum of Modern Art in Tokyo&lt;/a&gt; the other day and the painting that has impressed me the most is probably this. “The Base” by Hiroshi Nakamura.&lt;/p&gt;
-</description>
+					<description>Japan lets you stay visa free for up to 6 months for citizens of these countries: Germany, ...</description>
 				
 				<pubDate>Sun, 01 Dec 2024 00:00:00 +0700</pubDate>
-				<link>http://localhost:4000/japan-visa-free-for-six-months</link>
-				<guid isPermaLink="true">http://localhost:4000/japan-visa-free-for-six-months</guid>
+				<link>https://romanthefreeman.com/japan-visa-free-for-six-months</link>
+				<guid isPermaLink="true">https://romanthefreeman.com/japan-visa-free-for-six-months</guid>
 			</item>
 		
 			<item>
@@ -29,8 +28,8 @@
 					<description>Among the ongoing and potentially erupting new conflicts, the question is more actual than ever: can we stop wars?</description>
 				
 				<pubDate>Tue, 25 Jun 2024 00:00:00 +0700</pubDate>
-				<link>http://localhost:4000/can-we-stop-wars</link>
-				<guid isPermaLink="true">http://localhost:4000/can-we-stop-wars</guid>
+				<link>https://romanthefreeman.com/can-we-stop-wars</link>
+				<guid isPermaLink="true">https://romanthefreeman.com/can-we-stop-wars</guid>
 			</item>
 		
 			<item>
@@ -42,8 +41,8 @@
 					<description>School principal from Voznesensk shares her story of surviving under Russian occupation</description>
 				
 				<pubDate>Sun, 19 May 2024 00:00:00 +0700</pubDate>
-				<link>http://localhost:4000/the-small-town-which-ruined-russias-big-plans-on-odesa</link>
-				<guid isPermaLink="true">http://localhost:4000/the-small-town-which-ruined-russias-big-plans-on-odesa</guid>
+				<link>https://romanthefreeman.com/the-small-town-which-ruined-russias-big-plans-on-odesa</link>
+				<guid isPermaLink="true">https://romanthefreeman.com/the-small-town-which-ruined-russias-big-plans-on-odesa</guid>
 			</item>
 		
 			<item>
@@ -55,8 +54,8 @@
 					<description>Living frugally or just being cheap? What does living frugally mean in practice? Let&apos;s take a closer look.</description>
 				
 				<pubDate>Sat, 18 May 2024 00:00:00 +0700</pubDate>
-				<link>http://localhost:4000/the-real-reasons-for-frugal-living</link>
-				<guid isPermaLink="true">http://localhost:4000/the-real-reasons-for-frugal-living</guid>
+				<link>https://romanthefreeman.com/the-real-reasons-for-frugal-living</link>
+				<guid isPermaLink="true">https://romanthefreeman.com/the-real-reasons-for-frugal-living</guid>
 			</item>
 		
 			<item>
@@ -68,12 +67,12 @@
 					<description>I learned English and German by myself. The best part? You can too, absolutely for free. Here&apos;s how...</description>
 				
 				<pubDate>Thu, 28 Dec 2023 00:00:00 +0700</pubDate>
-				<link>http://localhost:4000/how-to-learn-a-language</link>
-				<guid isPermaLink="true">http://localhost:4000/how-to-learn-a-language</guid>
+				<link>https://romanthefreeman.com/how-to-learn-a-language</link>
+				<guid isPermaLink="true">https://romanthefreeman.com/how-to-learn-a-language</guid>
 			</item>
 		
 			<item>
-				<title>The Ultimate Guide To Life in Germany</title>
+				<title>The Ultimate Guide To Living in Germany</title>
 				
 					<dc:creator>Roman Freeman</dc:creator>
 				
@@ -81,22 +80,21 @@
 					<description>I&apos;ve survived my 20s living in Germany for 10 years. Here&apos;s what to expect.</description>
 				
 				<pubDate>Sat, 23 Dec 2023 00:00:00 +0700</pubDate>
-				<link>http://localhost:4000/the-ultimate-guide-to-life-in-germany</link>
-				<guid isPermaLink="true">http://localhost:4000/the-ultimate-guide-to-life-in-germany</guid>
+				<link>https://romanthefreeman.com/the-ultimate-guide-to-living-in-germany</link>
+				<guid isPermaLink="true">https://romanthefreeman.com/the-ultimate-guide-to-living-in-germany</guid>
 			</item>
 		
 			<item>
-				<title>What is Freedom? I&apos;ve been asking myself this question for a while, so I hit the streets of Germany, Japan, Ukraine and other places to ask people what they think.</title>
+				<title>What Is Freedom To You?</title>
 				
 					<dc:creator>Roman Freeman</dc:creator>
 				
 				
-					<description>&lt;p&gt;What &lt;em&gt;is&lt;/em&gt; Freedom, actually?&lt;/p&gt;
-</description>
+					<description>What is Freedom? I&apos;ve been asking myself this question for a while, so I hit the streets of Germany, Japan, Ukraine and other places to ask people what they think.</description>
 				
 				<pubDate>Sat, 05 Aug 2023 00:00:00 +0700</pubDate>
-				<link>http://localhost:4000/what-is-freedom</link>
-				<guid isPermaLink="true">http://localhost:4000/what-is-freedom</guid>
+				<link>https://romanthefreeman.com/what-is-freedom</link>
+				<guid isPermaLink="true">https://romanthefreeman.com/what-is-freedom</guid>
 			</item>
 		
 	</channel>
