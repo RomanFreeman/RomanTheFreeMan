@@ -369,6 +369,11 @@ pre code {
   text-decoration: none;
 }
 
+@media (max-width: 600px) {
+  .featured-post h2 span {
+    font: bold 17px/1.4 Helvetica, Sans-Serif;
+  }
+}
 .pagination {
   text-align: center;
 }
