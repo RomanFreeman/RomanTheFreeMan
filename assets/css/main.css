@@ -36,7 +36,6 @@ body {
 }
 
 body img {
-  align: middle;
   margin: 5px auto auto auto;
   display: block;
   max-width: 600px;
@@ -408,6 +407,63 @@ pre code {
   padding: 0px 10px 10px;
 }
 
+.content-container {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}
+
+.prev-button, .next-button {
+  margin: auto auto 30px auto;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  background: white;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  touch-action: manipulation;
+}
+
+p {
+  margin: 5px auto 10px auto;
+  display: block;
+  max-width: 850px;
+}
+
+img.gallery-image {
+  margin: 50px auto 15px auto;
+  display: block;
+  max-width: 850px;
+}
+
+@media (max-width: 1100px) {
+  p, img.gallery-image {
+    margin: 5px auto 10px auto;
+    display: block;
+    max-width: 80vw;
+  }
+}
+@media (max-width: 600px) {
+  p, img.gallery-image {
+    margin: 5px auto 10px;
+    display: block;
+    max-width: 95vw;
+  }
+}
+.gallery-location {
+  text-align: right;
+  font-size: small;
+  display: block;
+  margin: auto 10px;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.image-description {
+  margin-bottom: 50px;
+}
+
 .post-content {
   width: 600px;
   display: block;
@@ -422,7 +478,6 @@ pre code {
 }
 
 .featured-image img {
-  align: middle;
   margin: 5px auto 25px;
   display: block;
   max-width: 600px;
@@ -435,25 +490,21 @@ pre code {
     margin: 10px auto 10px;
   }
   .featured-image img {
-    align: middle;
     margin: 5px auto 25px;
     display: block;
     max-width: 60vw;
   }
   p a img {
-    align: middle;
     margin: 5px auto 25px;
     display: block;
     max-width: 60vw;
   }
   p img {
-    align: middle;
     margin: 5px auto 25px;
     display: block;
     max-width: 60vw;
   }
   .related-thumbnail img {
-    align: middle;
     max-width: 60vw;
   }
 }
@@ -464,25 +515,21 @@ pre code {
     margin: 10px auto 10px;
   }
   .featured-image img {
-    align: middle;
     margin: 5px auto 25px;
     display: block;
     max-width: 95vw;
   }
   p a img {
-    align: middle;
     margin: 5px auto 25px;
     display: block;
     max-width: 95vw;
   }
   p img {
-    align: middle;
     margin: 5px auto 25px;
     display: block;
     max-width: 95vw;
   }
   .related-thumbnail img {
-    align: middle;
     max-width: 95vw;
   }
 }
@@ -515,7 +562,6 @@ pre code {
 }
 
 .related img {
-  align: middle;
   margin: 0px auto 5px;
   display: block;
 }

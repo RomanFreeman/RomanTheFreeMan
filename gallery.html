@@ -14,7 +14,7 @@
   <head>
   <title>
     
-      Value Liberty | ROMAN THE FREE MAN
+      Gallery | ROMAN THE FREE MAN
     
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,21 +43,21 @@
 
   <!-- Use Jekyll SEO plugin -->
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Value Liberty | ROMAN THE FREE MAN</title>
+<title>Gallery | ROMAN THE FREE MAN</title>
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="Value Liberty" />
+<meta property="og:title" content="Gallery" />
 <meta name="author" content="Roman Freeman" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="It’s all about freedom" />
 <meta property="og:description" content="It’s all about freedom" />
-<link rel="canonical" href="https://romanthefreeman.com/liberty" />
-<meta property="og:url" content="https://romanthefreeman.com/liberty" />
+<link rel="canonical" href="https://romanthefreeman.com/gallery" />
+<meta property="og:url" content="https://romanthefreeman.com/gallery" />
 <meta property="og:site_name" content="ROMAN THE FREE MAN" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Value Liberty" />
+<meta property="twitter:title" content="Gallery" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Roman Freeman"},"description":"It’s all about freedom","headline":"Value Liberty","url":"https://romanthefreeman.com/liberty"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Roman Freeman"},"description":"It’s all about freedom","headline":"Gallery","url":"https://romanthefreeman.com/gallery"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -136,57 +136,84 @@
 </header>
 
       <div class="content-wrapper">
-        
-  
+        <div class="content-container">
+  <div>
+    
+    <p>There is no time...</p>
+    
+  </div>
+  <a class="gallery-location" href="" target="_blank"></a>
+  <button class="prev-button">‹</button>
+  <button class="next-button">›</button>
+  <div class="image-description">
+    
 
-  
-    <article>
-  <a href="https://romanthefreeman.com/can-we-stop-wars">
-    <div class="featured-post">
-      <img src="https://romanthefreeman.com/assets/img/ukraine/the-base.jpg" alt="Can We Stop Wars?">
-      
-        <h2><span>Can We Stop Wars?</span></h2>
-      
-    </div>
-  </a>
-</article>
+  </div>
+</div>
 
-  
+ 
 
-  
-    <article>
-  <a href="https://romanthefreeman.com/the-small-town-which-ruined-russias-big-plans-on-odesa">
-    <div class="featured-post">
-      <img src="https://romanthefreeman.com/assets/img//ukraine/voznesensk.jpg" alt="The Small Town Which Ruined Russia's Big Plans on Odesa">
-      
-        <h2><span>This Town Stopped Russia in Ukraine</span></h2>
-      
-    </div>
-  </a>
-</article>
+<script>
 
-  
+  document.addEventListener('DOMContentLoaded', function() {
 
-  
+    let sessionGallery = sessionStorage.getItem("gallery");
+    let galleryArray;
 
-  
+    if (!sessionGallery) {
+      const paths = ["gallery/night-on-nagara-river","gallery/odake-beach-sunrise"];
+      galleryArray = shuffleArray(paths); // Shuffle the array
+      sessionStorage.setItem("gallery", JSON.stringify(galleryArray));
+    } else {
+      galleryArray = JSON.parse(sessionGallery);
+    }
 
-  
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
 
-  
-    <article>
-  <a href="https://romanthefreeman.com/what-is-freedom">
-    <div class="featured-post">
-      <img src="https://romanthefreeman.com/assets/img/what-is-freedom/what-is-freedom.jpg" alt="What Is Freedom To You?">
-      
-        <h2><span>What Is Freedom To You?</span></h2>
-      
-    </div>
-  </a>
-</article>
+    function getCurrentPageIndex() {
+      const currentPagePath = window.location.pathname.substring(1); // Remove leading slash
+      return galleryArray.indexOf(currentPagePath);
+    }
 
-  
+    function loadNextPage() {
+      const nextIndex = (getCurrentPageIndex() + 1) % galleryArray.length;
+      window.location.href = "/" + galleryArray[nextIndex];
+    }
 
+    function loadPrevPage() {
+      const previousIndex = (getCurrentPageIndex() - 1 + galleryArray.length) % galleryArray.length;
+      window.location.href = "/" + galleryArray[previousIndex];
+    }
+
+    // Event listeners
+    document.getElementsByClassName('next-button')[0]
+      .addEventListener('click', loadNextPage);
+
+    document.getElementsByClassName('prev-button')[0]
+      .addEventListener('click', loadPrevPage);
+
+    // Keyboard bindings
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'ArrowLeft') {
+        loadPrevPage();
+      } else if (event.key === 'ArrowRight') {
+        loadNextPage();
+      }
+    });
+
+    // Load a random page on initial load
+    const currentPath = window.location.pathname;
+    if (currentPath === "/gallery/" || currentPath === "/gallery") {
+      loadNextPage();
+    }
+  });
+</script>
 
       </div>
       <footer class="footer">
