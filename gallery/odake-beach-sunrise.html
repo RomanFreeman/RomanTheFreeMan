@@ -161,12 +161,18 @@
 
   document.addEventListener('DOMContentLoaded', function() {
 
-    let sessionGallery = sessionStorage.getItem("gallery");
-    let galleryArray;
+    function getGalleryPaths() {
+      return ["gallery/kawasaki-sunset-mountains","gallery/night-on-nagara-river","gallery/odake-beach-sunrise"];
+    }
 
-    if (!sessionGallery) {
-      const paths = ["gallery/night-on-nagara-river","gallery/odake-beach-sunrise"];
-      galleryArray = shuffleArray(paths); // Shuffle the array
+    let sessionGallery = sessionStorage.getItem("gallery");
+    let sessionGalleryUnordered = sessionStorage.getItem("galleryUnordered");
+    let galleryArray;
+    const paths = getGalleryPaths();
+
+    if (!sessionGallery || sessionGalleryUnordered !== JSON.stringify(paths)) {
+      galleryArray = shuffleArray(paths);
+      sessionStorage.setItem("galleryUnordered", JSON.stringify(paths));
       sessionStorage.setItem("gallery", JSON.stringify(galleryArray));
     } else {
       galleryArray = JSON.parse(sessionGallery);
