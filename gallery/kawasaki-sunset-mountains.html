@@ -142,6 +142,7 @@
   <div>
     
     <img class="gallery-image" src="https://romanthefreeman.com/assets/img/gallery/kawasaki-sunset-mountains.webp" />
+    <p class="gallery-placeholder">There is no time...</p>
     
   </div>
   <a class="gallery-location" href="https://maps.app.goo.gl/AYJ9aDV9GHdbMNnJ8" target="_blank">Miyamae Ward, Kawasaki, Japan</a>
@@ -156,6 +157,16 @@
  
 
 <script>
+
+  const image = document.querySelector('.gallery-image');
+  const placeholder = document.querySelector('.gallery-placeholder');
+
+  if (image) {
+    image.onload = function() {
+      placeholder.style.display = 'none';
+      image.style.display = 'block';
+    };
+  }
 
   document.addEventListener('DOMContentLoaded', function() {
 

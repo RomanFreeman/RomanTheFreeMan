@@ -155,6 +155,16 @@
 
 <script>
 
+  const image = document.querySelector('.gallery-image');
+  const placeholder = document.querySelector('.gallery-placeholder');
+
+  if (image) {
+    image.onload = function() {
+      placeholder.style.display = 'none';
+      image.style.display = 'block';
+    };
+  }
+
   document.addEventListener('DOMContentLoaded', function() {
 
     function getGalleryPaths() {
