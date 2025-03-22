@@ -14,7 +14,7 @@
   <head>
   <title>
     
-      Test gallery title | ROMAN THE FREE MAN
+      The Land of the Rising Sun | ROMAN THE FREE MAN
     
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,9 +43,9 @@
 
   <!-- Use Jekyll SEO plugin -->
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Test gallery title | ROMAN THE FREE MAN</title>
+<title>The Land of the Rising Sun | ROMAN THE FREE MAN</title>
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="Test gallery title" />
+<meta property="og:title" content="The Land of the Rising Sun" />
 <meta name="author" content="Roman Freeman" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="It’s all about freedom" />
@@ -57,9 +57,9 @@
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://romanthefreeman.com/assets/img/gallery/odake-beach-sunrise.jpg" />
-<meta property="twitter:title" content="Test gallery title" />
+<meta property="twitter:title" content="The Land of the Rising Sun" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Roman Freeman"},"description":"It’s all about freedom","headline":"Test gallery title","image":"https://romanthefreeman.com/assets/img/gallery/odake-beach-sunrise.jpg","url":"https://romanthefreeman.com/gallery/odake-beach-sunrise"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Roman Freeman"},"description":"It’s all about freedom","headline":"The Land of the Rising Sun","image":"https://romanthefreeman.com/assets/img/gallery/odake-beach-sunrise.jpg","url":"https://romanthefreeman.com/gallery/odake-beach-sunrise"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -173,7 +173,7 @@
   document.addEventListener('DOMContentLoaded', function() {
 
     function getGalleryPaths() {
-      return ["gallery/kawasaki-sunset-mountains","gallery/night-on-nagara-river","gallery/odake-beach-sunrise"];
+      return ["gallery/kawasaki-sunset-mountains","gallery/night-on-nagara-river","gallery/odake-beach-sunrise","gallery/rice-fields-philippines-la-union"];
     }
 
     let sessionGallery = sessionStorage.getItem("gallery");
@@ -190,11 +190,12 @@
     }
 
     function shuffleArray(array) {
-      for (let i = array.length - 1; i > 0; i--) {
+      const shuffledArray = [...array]; 
+      for (let i = shuffledArray.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
+        [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
       }
-      return array;
+      return shuffledArray;
     }
 
     function getCurrentPageIndex() {
